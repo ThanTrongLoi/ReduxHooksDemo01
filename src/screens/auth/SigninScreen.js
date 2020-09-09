@@ -27,11 +27,11 @@ const SigninScreen = () => {
                         style={styles.input}
                         placeholder='E-mail/Số điện thoại'
                         placeholderTextColor='#000'
-                        underlineColorAndroid={true}
+                        underlineColorAndroid={false}
                     />
                     <Icon
                         style={styles.icon_form}
-                        name={'person-outline'}
+                        name={'mail-outline'}
                         size={26}
                     />
                 </View>
@@ -41,7 +41,7 @@ const SigninScreen = () => {
                         placeholder='Mật khẩu'
                         placeholderTextColor='#000'
                         secureTextEntry={visible}
-                        underlineColorAndroid={true}
+                        underlineColorAndroid={false}
                     />
                     <Icon
                         style={styles.icon_form}
@@ -91,7 +91,7 @@ const SigninScreen = () => {
                     ...styles.text_btn,
                     marginVertical: 20
                 }}>Hoặc đăng nhập với</Text>
-                <View style={{ justifyContent: 'space-between' }}>
+                <View style={{ justifyContent: 'space-between', marginVertical: 10 }}>
 
                     <View style={styles.box_social}>
                         <TouchableOpacity
@@ -130,9 +130,7 @@ const styles = StyleSheet.create({
     //============== Input-Form ======================
     box_input: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-
+        justifyContent: 'space-between'
     },
     input: {
         width: DimensionApp.getWIDTH() - 40,
@@ -195,7 +193,8 @@ const styles = StyleSheet.create({
     },
     //========== Logo ========
     logo: {
-        width: DimensionApp.getWIDTH() - 40,
-        height: DimensionApp.getWIDTH() - 40
+        width: DimensionApp.getWIDTH() - 150,
+        height: DimensionApp.getWIDTH() - 150,
+        marginTop: 10,
     }
 })

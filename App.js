@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import MainAppNavigator from './src'
+import SigninScreen from './src/screens/auth/SigninScreen'
 
 const App = () => {
   return (
